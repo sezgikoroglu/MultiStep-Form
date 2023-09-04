@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(217, 100%, 97%);
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 25px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  max-width: 90%;
+}
+.container .c-wrapper {
+  height: 100%;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  gap: 10px;
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+*, *::before, *::after {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  outline: 0;
+  text-rendering: optimizeLegibility;
+}
+
+blockquote {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main, header, aside, img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

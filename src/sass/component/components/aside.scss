@@ -1,0 +1,57 @@
+@use "../../base/vars" as v;
+
+aside{
+    width: 30%;
+    border-radius: 16px;
+    background-image: url("../../../assests/bg-sidebar-desktop.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    padding: 24px;
+    width: 35%;
+    border-radius: 8px;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      .item{
+        display: flex;
+        align-items: center;
+        gap:15px;
+
+        .itemNumber{
+            width: 36px;
+            height: 36px;
+            color: hsl(217, 100%, 97%);
+            border: 1px solid hsl(217, 100%, 97%);
+            border-radius: 999px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .full{
+                background-color: white;
+                color: hsl(213, 96%, 18%);
+            }
+        
+        .item-body{
+            display: flex;
+            flex-direction: column;
+            .subtitle{
+                font-size: 13px;
+                color: hsl(217, 100%, 97%);
+                text-transform: uppercase;
+                font-weight: 400;
+                opacity: 0.75;
+            }
+            .title{
+                text-transform: uppercase;
+                font-weight: 500;
+                color: white;
+            }
+        }
+      }
+    }
+}

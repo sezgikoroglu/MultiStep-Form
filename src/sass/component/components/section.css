@@ -1,0 +1,171 @@
+.step {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.step header {
+  margin-bottom: 24px;
+}
+.step header .wrapper h1 {
+  color: hsl(213, 96%, 18%);
+  font-size: 36px;
+  font-weight: 700;
+}
+.step header .wrapper h3 {
+  color: hsl(231, 11%, 63%);
+}
+.step main {
+  flex: 1;
+}
+.step footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.step footer .wrapper .next {
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-left: auto;
+}
+.step footer .wrapper .go-back {
+  color: hsl(231, 11%, 63%);
+  background: none;
+  font-size: 18px;
+  margin-right: auto;
+}
+.step footer .wrapper .go-back:hover {
+  opacity: 1;
+}
+
+.step1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.step1 .form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.step1 .form-item label {
+  color: hsl(213, 96%, 18%);
+}
+.step1 .form-item input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 8px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  transition: border-color 200ms ease 0s;
+}
+.step1 .form-item .input-error {
+  border-color: red;
+}
+.step1 .form-item .error {
+  font-size: 14px;
+  color: red;
+  position: absolute;
+  right: 0;
+}
+
+.step2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.step2 .options {
+  display: flex;
+  justify-content: space-between;
+}
+.step2 .options .label {
+  width: 30%;
+  padding: 16px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.step2 .options .label--selected {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.step2 .options .label:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.step2 .options .label img {
+  margin-bottom: 46px;
+}
+.step2 .options .label input {
+  display: none;
+}
+.step2 .options .label .title {
+  font-size: 18px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+.step2 .options .label .subtitle {
+  font-size: 14px;
+  color: hsl(231, 11%, 63%);
+}
+.step2 .options .label .description {
+  font-size: 12px;
+  color: hsl(231, 11%, 63%);
+}
+.step2 .time-options {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.step2 .time-options .button {
+  color: hsl(231, 11%, 63%);
+  border: 1px solid hsl(229, 24%, 87%);
+  background: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.step2 .time-options .button:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+  color: hsl(243, 100%, 62%);
+}
+.step2 .time-options .button--selected {
+  border: 1px solid hsl(243, 100%, 62%);
+  color: hsl(243, 100%, 62%);
+}
+
+.step3 .options {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.step3 .options .label {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  gap: 16px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 8px;
+}
+.step3 .options .label--selected {
+  border: 1px solid hsl(243, 100%, 62%);
+  color: hsl(243, 100%, 62%);
+}
+.step3 .options .label .content {
+  flex: 1 1 0%;
+}
+.step3 .options .label .content h4 {
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: hsl(213, 96%, 18%);
+}
+.step3 .options .label .content p {
+  font-size: 14px;
+  color: hsl(231, 11%, 63%);
+}
+.step3 .options .label p {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}/*# sourceMappingURL=section.css.map */

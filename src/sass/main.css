@@ -1,0 +1,263 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(217, 100%, 97%);
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 25px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  max-width: 90%;
+}
+.container .c-wrapper {
+  height: 100%;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  gap: 10px;
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+*, *::before, *::after {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  outline: 0;
+  text-rendering: optimizeLegibility;
+}
+
+blockquote {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main, header, aside, img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+aside {
+  width: 30%;
+  border-radius: 16px;
+  background-image: url("../../../assests/bg-sidebar-desktop.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 24px;
+  width: 35%;
+  border-radius: 8px;
+}
+aside .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+aside .wrapper .item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+aside .wrapper .item .itemNumber {
+  width: 36px;
+  height: 36px;
+  color: hsl(217, 100%, 97%);
+  border: 1px solid hsl(217, 100%, 97%);
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside .wrapper .item .full {
+  background-color: white;
+  color: hsl(213, 96%, 18%);
+}
+aside .wrapper .item .item-body {
+  display: flex;
+  flex-direction: column;
+}
+aside .wrapper .item .item-body .subtitle {
+  font-size: 13px;
+  color: hsl(217, 100%, 97%);
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.75;
+}
+aside .wrapper .item .item-body .title {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+}
+
+.step {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.step header {
+  margin-bottom: 24px;
+}
+.step header .wrapper h1 {
+  color: hsl(213, 96%, 18%);
+  font-size: 36px;
+  font-weight: 700;
+}
+.step header .wrapper h3 {
+  color: hsl(231, 11%, 63%);
+}
+.step main {
+  flex: 1;
+}
+.step footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.step footer .wrapper .next {
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-left: auto;
+}
+.step footer .wrapper .go-back {
+  color: hsl(231, 11%, 63%);
+  background: none;
+  font-size: 18px;
+  margin-right: auto;
+}
+.step footer .wrapper .go-back:hover {
+  opacity: 1;
+}
+
+.step1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.step1 .form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.step1 .form-item label {
+  color: hsl(213, 96%, 18%);
+}
+.step1 .form-item input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 8px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  transition: border-color 200ms ease 0s;
+}
+.step1 .form-item .input-error {
+  border-color: red;
+}
+.step1 .form-item .error {
+  font-size: 14px;
+  color: red;
+  position: absolute;
+  right: 0;
+}
+
+.step2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.step2 .options {
+  display: flex;
+  justify-content: space-between;
+}
+.step2 .options .label {
+  width: 30%;
+  padding: 16px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.step2 .options .label--selected {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.step2 .options .label:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.step2 .options .label img {
+  margin-bottom: 46px;
+}
+.step2 .options .label input {
+  display: none;
+}
+.step2 .options .label .title {
+  font-size: 18px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+.step2 .options .label .subtitle {
+  font-size: 14px;
+  color: hsl(231, 11%, 63%);
+}
+.step2 .options .label .description {
+  font-size: 12px;
+  color: hsl(231, 11%, 63%);
+}
+.step2 .time-options {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.step2 .time-options .button {
+  color: hsl(231, 11%, 63%);
+  border: 1px solid hsl(229, 24%, 87%);
+  background: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.step2 .time-options .button:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+  color: hsl(243, 100%, 62%);
+}
+.step2 .time-options .button--selected {
+  border: 1px solid hsl(243, 100%, 62%);
+  color: hsl(243, 100%, 62%);
+}/*# sourceMappingURL=main.css.map */
